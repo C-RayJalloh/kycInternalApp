@@ -15,8 +15,8 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Eye, Heading3, XCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Heading from "./Heading";
-import { useApproval } from "../../Mutations/useApprove";
-import { useRejection } from "../../Mutations/useRejection";
+import { useApproval } from "../Mutations/useApprove";
+import { useRejection } from "../Mutations/useRejection";
 
 function DataRow({ customer }) {
   const { isPending: isApproved, ApproveCustomer } = useApproval();

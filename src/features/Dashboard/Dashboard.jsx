@@ -2,7 +2,7 @@ import Spinner from "../../components/Spinner";
 import { useCustomer } from "../../Queries/useCustomers";
 
 function Dashboard() {
-  const { customers, isPending } = useCustomer(); // Initialize customers with an empty array
+  const { customers = [], isPending } = useCustomer(); // Initialize customers with an empty array
 
   if (isPending) return <Spinner />;
 

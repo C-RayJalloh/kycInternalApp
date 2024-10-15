@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
 import Customer from "./pages/Customer";
 import Customers from "./pages/Customers";
@@ -8,6 +8,7 @@ import Account from "./pages/Account";
 import Login from "./pages/Login";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
+import ProtectedRoute from "./features/Auth/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
@@ -16,14 +17,21 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="login" element={<Login />} />
-          <Route path="/" element={<AppLayout />}>
-            <Route index element={<Dashboard />} />
+          <Route
+            element={
+              <ProtectedRoute>
+                <AppLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route index element={<Navigate replace to="dashboard" />} />
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="customers" element={<Customers />} />
             <Route path="customer/new" element={<Customer />} />
             <Route path="account" element={<Account />} />
             <Route path="settings" element={<Settings />} />
           </Route>
+          <Route path="login" element={<Login />} />
         </Routes>
       </BrowserRouter>
 

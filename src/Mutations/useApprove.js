@@ -1,12 +1,12 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 import toast from "react-hot-toast";
-import { updateCustomer } from "../src/Services/apiCustomers";
+import { updateCustomer } from "../Services/apiCustomers";
 
-export function useRejection() {
+export function useApproval() {
   const queryClient = useQueryClient();
 
-  const { isPending, mutate: RejectCustomer } = useMutation({
+  const { isPending, mutate: ApproveCustomer } = useMutation({
     mutationFn: ({ id, newCustomer }) => updateCustomer(id, newCustomer), // Adjust for the reject mutation
     onSuccess: () => {
       toast.success("Customer rejected successfully");
@@ -22,7 +22,7 @@ export function useRejection() {
   });
 
   return {
-    RejectCustomer,
+    ApproveCustomer,
     isPending,
   };
 }
