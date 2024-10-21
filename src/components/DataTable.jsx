@@ -26,7 +26,7 @@ function DataTable() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Customers</h1>
+      <h1 className="text-2xl font-bold mb-4 text-white">Customers</h1>
 
       <Card>
         <CardHeader>

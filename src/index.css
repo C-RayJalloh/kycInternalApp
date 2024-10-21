@@ -1,8 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  :root {
-    --radius: 0.5rem
-  }
+
+/* :root {
+  --color-primary: 255 130 0;
+  --color-secondary: 0 48 100;
+  --color-background: 249 250 251;
 }
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.btn-primary {
+  @apply bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500;
+}
+
+.btn-secondary {
+  @apply bg-blue-900 text-white hover:bg-blue-800 focus:ring-blue-900;
+} */

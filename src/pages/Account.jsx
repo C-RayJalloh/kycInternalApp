@@ -31,8 +31,8 @@ function Account() {
           </Heading>
         </Row>
       </div>
-      <hr />
-      <Card className="max-w-md mx-auto p-4 shadow-md">
+
+      <Card className="max-w-md mx-auto p-4 shadow-md mt-5">
         <div className="mb-4">
           <Label htmlFor="username" className="font-semibold">
             Username:
@@ -55,7 +55,7 @@ function Account() {
             <Input id="newPassword" type="password" />
             <div className="mt-2 flex justify-between">
               <Button variant="outline">Confirm Reset</Button>
-              <Button variant="secondary">Cancel</Button>
+              <Button variant="default">Cancel</Button>
             </div>
           </>
         </div>

@@ -6,7 +6,9 @@ function Settings() {
   return (
     <>
       <Row>
-        <Heading as="h1">App settings </Heading>
+        <Heading as="h3" className="text-2xl font-bold text-white">
+          Register New Employee Admin
+        </Heading>
       </Row>
       <AddUserForm />
     </>

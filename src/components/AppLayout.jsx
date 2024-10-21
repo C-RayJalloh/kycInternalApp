@@ -14,7 +14,7 @@ export default function AppLayout() {
         <Header />
 
         {/* Main Content Area */}
-        <main className="flex-1 overflow-y-auto p-6 bg-gray-100 dark:bg-white-900">
+        <main className="flex-1 overflow-y-auto p-6 bg-gray-900">
           <Outlet />
         </main>
       </div>

@@ -3,18 +3,16 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <aside className="hidden md:flex flex-col w-64 bg-white dark:bg-slate-800 border-r border-gray-200 dark:border-white-700">
-      <div className="flex items-center justify-center h-16 border-b border-gray-50 dark:border-gray-50">
-        <span className="text-2xl font-bold text-stone-700 dark:text-stone-900">
-          KYC Dashboard
-        </span>
+    <aside className="hidden md:flex flex-col w-64 bg-orange-500 text-white">
+      <div className="flex items-center justify-center h-16 border-b border-white/20">
+        <span className="text-2xl font-bold">QCell KYC SYSTEM</span>
       </div>
       <nav className="flex-grow">
         <ul className="px-4 py-4 space-y-2">
           <li>
             <Link
               to="/"
-              className="flex items-center px-4 py-2 text-stone-900  hover:bg-stone-200 dark:hover:bg-stone-100 rounded-md"
+              className="flex items-center px-4 py-2  font-semibold hover:bg-white/10 rounded-md transition-colors duration-200"
             >
               <Home className="w-5 h-5 mr-3" />
               Home
@@ -23,7 +21,7 @@ function Sidebar() {
           <li>
             <Link
               to="/customers"
-              className="flex items-center px-4 py-2 text-stone-900  hover:bg-stone-200 dark:hover:bg-stone-100 rounded-md"
+              className="flex items-center px-4 py-2  font-semibold hover:bg-white/10 rounded-md transition-colors duration-200"
             >
               <Users className="w-5 h-5 mr-3" />
               Customers
@@ -32,7 +30,7 @@ function Sidebar() {
           <li>
             <Link
               to="/customer/new"
-              className="flex items-center px-4 py-2 text-stone-900  hover:bg-stone-200 dark:hover:bg-stone-100 rounded-md"
+              className="flex items-center px-4 py-2  font-semibold hover:bg-white/10 rounded-md transition-colors duration-200"
             >
               <UserPlus className="w-5 h-5 mr-3" />
               New Customer
@@ -41,7 +39,7 @@ function Sidebar() {
           <li>
             <Link
               to="/settings"
-              className="flex items-center px-4 py-2 text-stone-900  hover:bg-stone-200 dark:hover:bg-stone-100 rounded-md"
+              className="flex items-center px-4 py-2  font-semibold hover:bg-white/10 rounded-md transition-colors duration-200"
             >
               <Settings className="w-5 h-5 mr-3" />
               Settings
