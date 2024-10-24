@@ -9,8 +9,8 @@ import { useLogin } from "../../Mutations/useLogin";
 
 function LoginForm() {
   const { isLoggingIn, login } = useLogin();
-  const [email, setEmail] = useState("ray.example@gmail.com");
-  const [password, setPassword] = useState("pass12345");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   function handleLogin(e) {
     e.preventDefault();
