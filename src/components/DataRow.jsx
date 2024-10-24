@@ -161,7 +161,7 @@ function DataRow({ customer }) {
                     <img
                       src={idImage}
                       alt="Customer ID"
-                      className="max-w-full h-auto max-h-[300px] object-contain"
+                      className="max-w-full h-auto max-h-[300px] object-contain rounded-md"
                     />
                   </div>
                 </div>
@@ -178,7 +178,7 @@ function DataRow({ customer }) {
                     <img
                       src={customerImage}
                       alt="Customer Image"
-                      className="max-w-full h-auto max-h-[300px] object-contain"
+                      className="max-w-full h-auto max-h-[300px] object-contain rounded-md"
                     />
                   </div>
                 </div>
