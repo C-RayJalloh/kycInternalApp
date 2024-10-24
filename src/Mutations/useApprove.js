@@ -9,7 +9,7 @@ export function useApproval() {
   const { isPending, mutate: ApproveCustomer } = useMutation({
     mutationFn: ({ id, newCustomer }) => updateCustomer(id, newCustomer), // Adjust for the reject mutation
     onSuccess: () => {
-      toast.success("Customer rejected successfully");
+      toast.success("Customer approved successfully");
 
       // Invalidate the customer query to refresh the data
       queryClient.invalidateQueries({
