@@ -7,7 +7,7 @@ function Settings() {
     <>
       <Row>
         <Heading as="h3" className="text-2xl font-bold text-white">
-          Register New Employee Admin
+          Register New Admin Employee
         </Heading>
       </Row>
       <AddUserForm />

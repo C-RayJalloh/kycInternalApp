@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
 import Heading from "../components/Heading";
 import Row from "../components/Row";
-
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
 
 import { useUser } from "../Queries/useUser";
 
@@ -17,18 +15,11 @@ function Account() {
     },
   } = useUser();
 
-  const handleResetPassword = () => {};
-
-  // const username = "Jahrulo";
-  // const email = "jahrulo@example.com";
-
   return (
     <>
       <div>
         <Row>
-          <Heading as="h3">
-            Hi {fullName} 🤗, need to reset your password?{" "}
-          </Heading>
+          <Heading as="h3">Hi {fullName} 🤗</Heading>
         </Row>
       </div>
 
@@ -47,7 +38,7 @@ function Account() {
           <Input id="email" value={email} disabled />
         </div>
 
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <>
             <Label htmlFor="newPassword" className="font-semibold">
               New Password:
@@ -58,7 +49,7 @@ function Account() {
               <Button variant="default">Cancel</Button>
             </div>
           </>
-        </div>
+        </div> */}
       </Card>
     </>
   );

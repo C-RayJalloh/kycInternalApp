@@ -1,4 +1,4 @@
-import { Home, Settings, Users } from "lucide-react";
+import { Home, Settings, UserPlus, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
@@ -20,14 +20,14 @@ function Sidebar() {
           </li>
           <li>
             <Link
-              to="/customers"
+              to="/kyc-submissions"
               className="flex items-center px-4 py-2  font-semibold hover:bg-white/10 rounded-md transition-colors duration-200"
             >
               <Users className="w-5 h-5 mr-3" />
-              Customers
+              KYC - Submissions
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
               to="/customer/new"
               className="flex items-center px-4 py-2  font-semibold hover:bg-white/10 rounded-md transition-colors duration-200"
@@ -35,7 +35,7 @@ function Sidebar() {
               <UserPlus className="w-5 h-5 mr-3" />
               New Customer
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               to="/settings"

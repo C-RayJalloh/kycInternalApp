@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppLayout from "./components/AppLayout";
-// import Customer from "./pages/Customer";
+import NewCustomer from "./pages/NewCustomer";
 import Customers from "./pages/Customers";
 import Dashboard from "./features/Dashboard/Dashboard";
 import Settings from "./pages/Settings";
@@ -26,8 +26,8 @@ function App() {
           >
             <Route index element={<Navigate replace to="dashboard" />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="customers" element={<Customers />} />
-            {/* <Route path="customer/new" element={<Customer />} /> */}
+            <Route path="kyc-submissions" element={<Customers />} />
+            <Route path="customer/new" element={<NewCustomer />} />
             <Route path="account" element={<Account />} />
             <Route path="settings" element={<Settings />} />
           </Route>

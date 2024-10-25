@@ -1,15 +1,14 @@
 import Heading from "../components/Heading";
 import Row from "../components/Row";
-// import CustomerForm from "../components/ui/CustomerForm";
-
+import NewCustomerForm from "../components/NewCustomerForm";
 
 function Customer() {
   return (
     <>
       <Row>
-        <Heading as="h1">Add new customer </Heading>
+        <Heading as="h1">Register new customer </Heading>
       </Row>
-     {/* <CustomerForm /> */}
+      <NewCustomerForm />
     </>
   );
 }
