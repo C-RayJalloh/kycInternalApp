@@ -152,32 +152,30 @@ function DataRow({ customer }) {
                   </div>
                 </div>
 
-                {/* ID Card */}
-                <div className="grid grid-cols-4 items-center gap-6">
-                  <Label htmlFor="idImage" className="text-right font-semibold">
-                    National ID
-                  </Label>
-                  <div id="idImage" className="col-span-3">
-                    <img
-                      src={idImage}
-                      alt="Customer ID"
-                      className="max-w-full h-auto max-h-[300px] object-contain rounded-md"
-                    />
-                  </div>
-                </div>
-
-                {/* Customer Image */}
                 <div className="grid grid-cols-4 items-center gap-6">
                   <Label
                     htmlFor="customerImage"
                     className="text-right font-semibold"
                   >
-                    Customer Image
+                    Customer Selfie
                   </Label>
                   <div id="customerImage" className="col-span-3">
                     <img
                       src={customerImage}
                       alt="Customer Image"
+                      className="max-w-full h-auto max-h-[300px] object-contain rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-4 items-center gap-6">
+                  <Label htmlFor="idImage" className="text-right font-semibold">
+                    National ID Card
+                  </Label>
+                  <div id="idImage" className="col-span-3">
+                    <img
+                      src={idImage}
+                      alt="Customer ID"
                       className="max-w-full h-auto max-h-[300px] object-contain rounded-md"
                     />
                   </div>
