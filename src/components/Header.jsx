@@ -37,7 +37,7 @@ function Header() {
           onClick={() => navigate("/account")}
           className="text-white hover:bg-white/10 flex items-center space-x-2 px-3 py-2"
         >
-          <User className="h-5 w-5" />
+          <User className="h-5 w-5 " />
         </Button>
         <span className="hidden md:inline">LogOut</span>
         <Button
