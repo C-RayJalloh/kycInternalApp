@@ -28,7 +28,7 @@ function LoginForm() {
         <Input
           id="email"
           type="email"
-          placeholder="Enter your email address"
+          placeholder="ray.example@gmail.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           disabled={isLoggingIn}
@@ -45,7 +45,7 @@ function LoginForm() {
         <Input
           id="password"
           type="password"
-          placeholder="Enter your password"
+          placeholder="pass12345"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           disabled={isLoggingIn}
